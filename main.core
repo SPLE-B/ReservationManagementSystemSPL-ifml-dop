@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_0Ofa8EdpEfGB28V2DbemaQ">
+  <interactionFlowModel id="_3b_RsEdpEfGB28V2DbemaQ">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3cAf0EdpEfGB28V2DbemaQ" name="Home" isXOR="true"/>
+  </interactionFlowModel>
+  <domainModel id="_0Ofa8UdpEfGB28V2DbemaQ">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook4EdpEfGB28V2DbemaQ" name="BookingTypeImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_doq7cELFEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook4UdpEfGB28V2DbemaQ" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_KzSe8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook4kdpEfGB28V2DbemaQ" name="bookingDate">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_LQyTQELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook40dpEfGB28V2DbemaQ" name="statusBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_MTKWQELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook5EdpEfGB28V2DbemaQ" name="totalPrice">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_Mk5mgELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook5UdpEfGB28V2DbemaQ" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_MpGxEELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook5kdpEfGB28V2DbemaQ" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_k18doELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook50dpEfGB28V2DbemaQ" name="PricingImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_wd8_YELFEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook6EdpEfGB28V2DbemaQ" name="idPricing">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_qZ5gUELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook6UdpEfGB28V2DbemaQ" name="basePrice">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_tlEb0ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook6kdpEfGB28V2DbemaQ" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#__eOj0ELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook60dpEfGB28V2DbemaQ" name="PaymentImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_TRaXQELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook7EdpEfGB28V2DbemaQ" name="idPayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_0Ozv8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook7UdpEfGB28V2DbemaQ" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_39N7YELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook7kdpEfGB28V2DbemaQ" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_-HSQ8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook70dpEfGB28V2DbemaQ" name="statusPayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_BVbn8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0Ook8EdpEfGB28V2DbemaQ" name="metodePayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_Fmf0gELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0OpL8EdpEfGB28V2DbemaQ" name="NotificationImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_XJbxsELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL8UdpEfGB28V2DbemaQ" name="idNotification">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_PFW7oELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL8kdpEfGB28V2DbemaQ" name="message">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_SbB28ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL80dpEfGB28V2DbemaQ" name="typeMessage">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_V7Lj8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL9EdpEfGB28V2DbemaQ" name="statusMessage">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_YevF0ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0OpL9UdpEfGB28V2DbemaQ" name="CancellationImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_mdP6AELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL9kdpEfGB28V2DbemaQ" name="idCancellation">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_fQg7oELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL90dpEfGB28V2DbemaQ" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_ixWlIELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL-EdpEfGB28V2DbemaQ" name="reason">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_kw1JkELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL-UdpEfGB28V2DbemaQ" name="cancelledAt">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_nLLsIELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0OpL-kdpEfGB28V2DbemaQ" name="RatingImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_qH-fUELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL-0dpEfGB28V2DbemaQ" name="idRating">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_sQO6YELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL_EdpEfGB28V2DbemaQ" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_3rgD0ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL_UdpEfGB28V2DbemaQ" name="score">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_6qGi8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_0OpL_kdpEfGB28V2DbemaQ" name="ResourceImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_dMTywELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpL_0dpEfGB28V2DbemaQ" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_qxKe4ELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpMAEdpEfGB28V2DbemaQ" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_wqGoMELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpMAUdpEfGB28V2DbemaQ" name="typeResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_0GBVcELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_0OpMAkdpEfGB28V2DbemaQ" name="location">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_4iHtUELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
