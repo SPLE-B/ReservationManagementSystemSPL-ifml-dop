@@ -2,10 +2,12 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_0Ofa8EdpEfGB28V2DbemaQ">
   <interactionFlowModel id="_3b_RsEdpEfGB28V2DbemaQ">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3cAf0EdpEfGB28V2DbemaQ" name="Home" isXOR="true"/>
-    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_e37KsEiVEfGdkadQVrAV9A" name="Cancellation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0">
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_e37KsEiVEfGdkadQVrAV9A" name="Cancellation">
       <annotations text="Cancellation"/>
       <viewElementEvents id="_uazCsEiVEfGdkadQVrAV9A" name="Cancellation">
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_xX8JQEiVEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_xX8JQEiVEfGdkadQVrAV9A">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Cancellation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
   </interactionFlowModel>

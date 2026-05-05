@@ -2,12 +2,21 @@
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_SiK0IEiDEfGWK_MXsrKHUg">
   <interactionFlowModel id="_dVJZEEiEEfGWK_MXsrKHUg">
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_dVMcYEiEEfGWK_MXsrKHUg" name="Cancellation">
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_e8EzQEiHEfGdkadQVrAV9A" name="CancellationListPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0">
-        <annotations text="/cancellation"/>
+      <inputPorts id="_Zs1MkEiaEfGdkadQVrAV9A" name="Input Port"/>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_e8EzQEiHEfGdkadQVrAV9A" name="CancellationListPage">
+        <annotations text="/cancellation/"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.1/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElements xsi:type="ext:List" id="_JuhlgEiJEfGdkadQVrAV9A" name="Table Cancellation">
           <parameters id="_bGRCgEiLEfGdkadQVrAV9A" name="idCancellation" direction="out"/>
           <viewElementEvents id="_bLUsMEiMEfGdkadQVrAV9A" name="detail">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_yFFnUEiOEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_yFFnUEiOEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1">
+              <parameterBindingGroup id="_8iZdQEiaEfGdkadQVrAV9A">
+                <parameterBindings id="__P5lUEiaEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_OFF9IEiJEfGdkadQVrAV9A" name="List Cancellation" uniformResourceIdentifier="call/cancellation/getall">
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_qoRpwEiJEfGdkadQVrAV9A" name="idCancellation">
@@ -32,7 +41,11 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_RJSpwEiQEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </viewElementEvents>
         <viewElementEvents id="_sMJMEEiQEfGdkadQVrAV9A" name="edit">
-          <outInteractionFlows xsi:type="core:NavigationFlow" id="_u-fX4EiQEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_u-fX4EiQEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2">
+            <parameterBindingGroup id="_Eu2E0EicEfGdkadQVrAV9A">
+              <parameterBindings id="_Gaa10EicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
         </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_cxobUEiPEfGdkadQVrAV9A" name="Detail Cancellation">
           <parameters id="_nmGqgEiPEfGdkadQVrAV9A" name="idCancellation" direction="inout"/>
@@ -58,7 +71,13 @@
         <viewElements xsi:type="ext:Form" id="_8Tp60EiTEfGdkadQVrAV9A" name="Form Edit Cancellation">
           <annotations text="required"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_BPPOkEiVEfGdkadQVrAV9A" name="Update">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_FpYeoEiVEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_FpYeoEiVEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_oadzwEicEfGdkadQVrAV9A">
+                <parameterBindings id="_pu7FQEicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@parameters.0"/>
+                <parameterBindings id="_rtPzIEicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.1/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.1/@subViewComponentParts.0"/>
+                <parameterBindings id="_tlz3QEicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.2/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.2/@subViewComponentParts.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_CAgI4EiUEfGdkadQVrAV9A" name="Data Binding">
             <parameters id="_FVr8AEiUEfGdkadQVrAV9A" name="idCancellation" direction="inout"/>
@@ -72,7 +91,13 @@
         <viewElements xsi:type="ext:Form" id="_13778EiQEfGdkadQVrAV9A" name="Form Cancellation Request">
           <annotations text="Required"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_YsVdEEiTEfGdkadQVrAV9A" name="Submit Cancellation">
-            <outInteractionFlows xsi:type="core:NavigationFlow" id="_c71jYEiTEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_c71jYEiTEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <parameterBindingGroup id="_X_rcUEicEfGdkadQVrAV9A">
+                <parameterBindings id="_aUleMEicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0/@subViewComponentParts.1" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.0/@subViewComponentParts.0/@subViewComponentParts.1"/>
+                <parameterBindings id="_d3F7oEicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.1/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.1/@subViewComponentParts.0"/>
+                <parameterBindings id="_feEggEicEfGdkadQVrAV9A" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.2/@subViewComponentParts.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewComponentParts.2/@subViewComponentParts.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_ATTuoEiREfGdkadQVrAV9A" name="Data Binding" uniformResourceIdentifier="call/booking/getall">
             <subViewComponentParts xsi:type="ext:SelectionField" id="_PHbDMEiREfGdkadQVrAV9A" name="Booking">
