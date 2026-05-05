@@ -16,6 +16,7 @@
         </viewElements>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_HI07UEiZEfGrKc0pnrQ07w" name="Tambah Notification Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/notification/add"/>
         <viewElements xsi:type="ext:Form" id="_KfcR0EiZEfGrKc0pnrQ07w" name="Tambah Notification">
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_LvYS4EidEfGrKc0pnrQ07w" name="kirim">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_gsQVcEidEfGrKc0pnrQ07w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
@@ -30,23 +31,10 @@
               <annotations text="Required"/>
             </subViewComponentParts>
           </viewComponentParts>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_WAO0cEiZEfGrKc0pnrQ07w" name="Simple Field">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_v2YywEicEfGrKc0pnrQ07w" name="Slot">
-              <annotations text="Required"/>
-            </subViewComponentParts>
-          </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:IFMLAction" id="_AbmRgEidEfGrKc0pnrQ07w" name="Save Notification" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <outInteractionFlows xsi:type="core:NavigationFlow" id="_i219sEidEfGrKc0pnrQ07w" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
-      </interactionFlowModelElement>
-      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_Op6U4EieEfGrKc0pnrQ07w" name="ViewContainer">
-        <viewElements xsi:type="ext:Details" id="_RFqloEieEfGrKc0pnrQ07w" name="Details">
-          <viewComponentParts xsi:type="core:DataBinding" id="_S1YPwEieEfGrKc0pnrQ07w" name="Data Binding">
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_UI5GEEieEfGrKc0pnrQ07w" name="Visualization Attribute"/>
-            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Vwc5wEieEfGrKc0pnrQ07w" name="Visualization Attribute"/>
-          </viewComponentParts>
-        </viewElements>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
