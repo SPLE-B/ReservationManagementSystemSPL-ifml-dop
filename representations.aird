@@ -18,7 +18,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="main.core#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_jd60UEhnEfGkXdXOORD0Lw" name="BookingType" repPath="#_jcG2cEhnEfGkXdXOORD0Lw" changeId="1777981583268">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_jd60UEhnEfGkXdXOORD0Lw" name="BookingType" repPath="#_jcG2cEhnEfGkXdXOORD0Lw" changeId="1777997561462">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']"/>
         <target xmi:type="core:IFMLModel" href="BookingType.core#/"/>
       </ownedRepresentationDescriptors>
@@ -1729,7 +1729,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']"/>
-          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_rk1M4EhuEfGkXdXOORD0Lw" name="«IFMLParameter»  idBookingDetail: Invalid Type" tooltipText="IFMLParameter idBookingDetail" width="20" height="3">
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_rk1M4EhuEfGkXdXOORD0Lw" name="«IFMLParameter»  idBooking: Invalid Type" tooltipText="IFMLParameter idBooking" width="20" height="3">
             <target xmi:type="core:IFMLParameter" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
             <semanticElements xmi:type="core:IFMLParameter" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@parameters.0"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1890,7 +1890,7 @@
               </ownedStyle>
               <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@subContainerMappings[name='ViewComponentPart']/@subContainerMappings[name='SubViewComponentPart']"/>
             </ownedDiagramElements>
-            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_y4ZWkEhtEfGkXdXOORD0Lw" name="«IFMLParameter»  idBookingList: Invalid Type" tooltipText="IFMLParameter idBookingList" width="20" height="3">
+            <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_y4ZWkEhtEfGkXdXOORD0Lw" name="«IFMLParameter»  idBooking: Invalid Type" tooltipText="IFMLParameter idBooking" width="20" height="3">
               <target xmi:type="core:IFMLParameter" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
               <semanticElements xmi:type="core:IFMLParameter" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewComponentParts.0/@parameters.0"/>
               <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1965,7 +1965,7 @@
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ViewContainer']/@subContainerMappings[name='ViewComponent']"/>
-          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_yBzlcEhwEfGkXdXOORD0Lw" name="«IFMLParameter»  idBookingUpdate: Invalid Type" tooltipText="IFMLParameter idBookingUpdate" width="20" height="3">
+          <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_yBzlcEhwEfGkXdXOORD0Lw" name="«IFMLParameter»  idBooking: Invalid Type" tooltipText="IFMLParameter idBooking" width="20" height="3">
             <target xmi:type="core:IFMLParameter" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
             <semanticElements xmi:type="core:IFMLParameter" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
             <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2332,7 +2332,7 @@
         <description xmi:type="style:ShapeContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZMVHYEh1EfGkXdXOORD0Lw" name="idBookingUpdate-->idBookingDetail">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZMVHYEh1EfGkXdXOORD0Lw" name="idBooking-->idBooking">
         <target xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <semanticElements xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_ZMVucEh1EfGkXdXOORD0Lw" labelSize="9" showIcon="false">
@@ -2368,7 +2368,7 @@
         <description xmi:type="style:ShapeContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_v_qVQUh1EfGkXdXOORD0Lw" name="idBookingUpdate-->idBookingDetail">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_v_qVQUh1EfGkXdXOORD0Lw" name="idBooking-->idBooking">
         <target xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElementEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <semanticElements xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElementEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_v_q8UEh1EfGkXdXOORD0Lw" labelSize="9" showIcon="false">
@@ -2404,7 +2404,7 @@
         <description xmi:type="style:ShapeContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_7MVpEEh1EfGkXdXOORD0Lw" name="idBookingDetail-->idBookingUpdate">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_7MVpEEh1EfGkXdXOORD0Lw" name="idBooking-->idBooking">
         <target xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <semanticElements xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_7MVpEUh1EfGkXdXOORD0Lw" labelSize="9" showIcon="false">
@@ -2449,7 +2449,7 @@
         <description xmi:type="style:ShapeContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_bcy4sEh2EfGkXdXOORD0Lw" name="idBookingList-->idBookingDetail">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_bcy4sEh2EfGkXdXOORD0Lw" name="idBooking-->idBooking">
         <target xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <semanticElements xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_bcy4sUh2EfGkXdXOORD0Lw" labelSize="9" showIcon="false">
@@ -2493,7 +2493,7 @@
         <description xmi:type="style:ShapeContainerStyleDescription" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/IFMLEditorDesign/description/IFML.odesign#//@ownedViewpoints[name='IFML_Core']/@ownedRepresentations[name='IFMLDiagram']/@defaultLayer/@containerMappings[name='ParameterBindingGroup']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_K6V9kEh3EfGkXdXOORD0Lw" name="idBookingDetail-->idBookingDetail">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_K6V9kEh3EfGkXdXOORD0Lw" name="idBooking-->idBooking">
         <target xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <semanticElements xmi:type="core:ParameterBinding" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0/@parameterBindingGroup/@parameterBindings.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_K6V9kUh3EfGkXdXOORD0Lw" labelSize="9" showIcon="false">

@@ -30,7 +30,7 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_JPyVsEh2EfGkXdXOORD0Lw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:Details" id="_ZvlpoEhuEfGkXdXOORD0Lw" name="Booking Detail">
-          <parameters id="_rkl8UEhuEfGkXdXOORD0Lw" name="idBookingDetail" direction="inout"/>
+          <parameters id="_rkl8UEhuEfGkXdXOORD0Lw" name="idBooking" direction="inout"/>
           <viewElementEvents id="_1gTTUEh1EfGkXdXOORD0Lw" name="Update">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_2zdkUEh1EfGkXdXOORD0Lw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
               <parameterBindingGroup id="_6Oe5sEh1EfGkXdXOORD0Lw">
@@ -75,7 +75,7 @@
             </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_5twhUEhsEfGkXdXOORD0Lw" name="Booking List Data" uniformResourceIdentifier="call/booking/list">
-            <parameters id="_y4LUIEhtEfGkXdXOORD0Lw" name="idBookingList" direction="out"/>
+            <parameters id="_y4LUIEhtEfGkXdXOORD0Lw" name="idBooking" direction="out"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Ftb_YEhtEfGkXdXOORD0Lw" name="Booking Id" featureConcept="//@domainModel/@domainElements.13"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_ZhxFgEhtEfGkXdXOORD0Lw" name="Booking Date" featureConcept="//@domainModel/@domainElements.2"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_mp1vAEhtEfGkXdXOORD0Lw" name="Booking Status" featureConcept="//@domainModel/@domainElements.3"/>
@@ -98,7 +98,7 @@
           </outInteractionFlows>
         </viewElementEvents>
         <viewElements xsi:type="ext:Form" id="_pSvjkEhwEfGkXdXOORD0Lw" name="Update BookingType Form">
-          <parameters id="_yBjGwEhwEfGkXdXOORD0Lw" name="idBookingUpdate" direction="inout"/>
+          <parameters id="_yBjGwEhwEfGkXdXOORD0Lw" name="idBooking" direction="inout"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_BrS7cEh0EfGkXdXOORD0Lw" name="OnSubmit Event">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_uqqGoEh0EfGkXdXOORD0Lw" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
           </viewElementEvents>
