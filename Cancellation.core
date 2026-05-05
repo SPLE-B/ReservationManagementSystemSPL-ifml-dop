@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_SiK0IEiDEfGWK_MXsrKHUg">
+  <interactionFlowModel id="_dVJZEEiEEfGWK_MXsrKHUg">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_dVMcYEiEEfGWK_MXsrKHUg" name="Cancellation">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_e8EzQEiHEfGdkadQVrAV9A" name="CancellationListPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/cancellation"/>
+        <viewElements xsi:type="ext:List" id="_JuhlgEiJEfGdkadQVrAV9A" name="Table Cancellation">
+          <parameters id="_bGRCgEiLEfGdkadQVrAV9A" name="idCancellation" direction="out"/>
+          <viewElementEvents id="_bLUsMEiMEfGdkadQVrAV9A" name="detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_yFFnUEiOEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_OFF9IEiJEfGdkadQVrAV9A" name="List Cancellation" uniformResourceIdentifier="call/cancellation/getall">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_qoRpwEiJEfGdkadQVrAV9A" name="idCancellation">
+              <featureConcept href="main.core#//@domainModel/@domainElements.23"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_-IruUEiJEfGdkadQVrAV9A" name="idBooking">
+              <featureConcept href="main.core#//@domainModel/@domainElements.1"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_6JYxwEiKEfGdkadQVrAV9A" name="reason">
+              <featureConcept href="main.core#//@domainModel/@domainElements.25"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="__BtLkEiKEfGdkadQVrAV9A" name="cancelledAt">
+              <featureConcept href="main.core#//@domainModel/@domainElements.26"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_OHIyQEiOEfGdkadQVrAV9A" name="CancellationDetailPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/cancellation/&lt;idCancellation>/"/>
+        <parameters id="_T9HRsEiPEfGdkadQVrAV9A" name="idCancellation"/>
+        <viewElementEvents id="_OTKKIEiQEfGdkadQVrAV9A" name="Back">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_RJSpwEiQEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElementEvents id="_sMJMEEiQEfGdkadQVrAV9A" name="edit">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_u-fX4EiQEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_cxobUEiPEfGdkadQVrAV9A" name="Detail Cancellation">
+          <parameters id="_nmGqgEiPEfGdkadQVrAV9A" name="idCancellation" direction="inout"/>
+          <viewComponentParts xsi:type="core:DataBinding" id="_tXGYwEiPEfGdkadQVrAV9A" name="Data Binding" uniformResourceIdentifier="call/cancellation/getbyid">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9lmnsEiPEfGdkadQVrAV9A" name="idCancellation">
+              <featureConcept href="main.core#//@domainModel/@domainElements.23"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_BPvXIEiQEfGdkadQVrAV9A" name="idBooking">
+              <featureConcept href="main.core#//@domainModel/@domainElements.1"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_Dej_IEiQEfGdkadQVrAV9A" name="Reason">
+              <featureConcept href="main.core#//@domainModel/@domainElements.25"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_G5750EiQEfGdkadQVrAV9A" name="CancelledAt">
+              <featureConcept href="main.core#//@domainModel/@domainElements.26"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_bf-JsEiQEfGdkadQVrAV9A" name="CancellationEditPage" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/cancellation/&lt;idCancellation>/edit/"/>
+        <parameters id="_0iMwsEiTEfGdkadQVrAV9A" name="idCancellation"/>
+        <viewElements xsi:type="ext:Form" id="_8Tp60EiTEfGdkadQVrAV9A" name="Form Edit Cancellation">
+          <annotations text="required"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_BPPOkEiVEfGdkadQVrAV9A" name="Update">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_FpYeoEiVEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_CAgI4EiUEfGdkadQVrAV9A" name="Data Binding">
+            <parameters id="_FVr8AEiUEfGdkadQVrAV9A" name="idCancellation" direction="inout"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_oAcD0EiUEfGdkadQVrAV9A" name="reason"/>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_sicPYEiUEfGdkadQVrAV9A" name="cancelledAt"/>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_dEsEwEiQEfGdkadQVrAV9A" name="CancellationFormPage">
+        <annotations text="/cancellation/request/"/>
+        <viewElements xsi:type="ext:Form" id="_13778EiQEfGdkadQVrAV9A" name="Form Cancellation Request">
+          <annotations text="Required"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_YsVdEEiTEfGdkadQVrAV9A" name="Submit Cancellation">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_c71jYEiTEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_ATTuoEiREfGdkadQVrAV9A" name="Data Binding" uniformResourceIdentifier="call/booking/getall">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_PHbDMEiREfGdkadQVrAV9A" name="Booking">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Uw-ssEiREfGdkadQVrAV9A" name="BookingId"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_ZPZ_0EiREfGdkadQVrAV9A" name="idBooking" direction="out"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_iIhVkEiREfGdkadQVrAV9A" name="Reason">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_CvBGoEiSEfGdkadQVrAV9A" name="reason"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_q3EaEEiREfGdkadQVrAV9A" name="CancelledAt">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Ng6i8EiSEfGdkadQVrAV9A" name="cancelledAt"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_GhwjAEiTEfGdkadQVrAV9A" name="Save Cancellation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_nLVdQEiTEfGdkadQVrAV9A">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_qgNHUEiTEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_4V094EiUEfGdkadQVrAV9A" name="Update Cancellation" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <actionEvents id="_HZGIwEiVEfGdkadQVrAV9A">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_JJJKEEiVEfGdkadQVrAV9A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_SiK0IUiDEfGWK_MXsrKHUg">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiRh0EiDEfGWK_MXsrKHUg" name="BookingTypeImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_doq7cELFEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI4EiDEfGWK_MXsrKHUg" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_KzSe8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI4UiDEfGWK_MXsrKHUg" name="bookingDate">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_LQyTQELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI4kiDEfGWK_MXsrKHUg" name="statusBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_MTKWQELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI40iDEfGWK_MXsrKHUg" name="totalPrice">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_Mk5mgELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI5EiDEfGWK_MXsrKHUg" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_MpGxEELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI5UiDEfGWK_MXsrKHUg" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_k18doELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiSI5kiDEfGWK_MXsrKHUg" name="PricingImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_wd8_YELFEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI50iDEfGWK_MXsrKHUg" name="idPricing">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_qZ5gUELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI6EiDEfGWK_MXsrKHUg" name="basePrice">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_tlEb0ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI6UiDEfGWK_MXsrKHUg" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#__eOj0ELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiSI6kiDEfGWK_MXsrKHUg" name="PaymentImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_TRaXQELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI60iDEfGWK_MXsrKHUg" name="idPayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_0Ozv8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI7EiDEfGWK_MXsrKHUg" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_39N7YELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI7UiDEfGWK_MXsrKHUg" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_-HSQ8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI7kiDEfGWK_MXsrKHUg" name="statusPayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_BVbn8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI70iDEfGWK_MXsrKHUg" name="metodePayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_Fmf0gELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiSI8EiDEfGWK_MXsrKHUg" name="NotificationImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_XJbxsELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI8UiDEfGWK_MXsrKHUg" name="idNotification">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_PFW7oELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI8kiDEfGWK_MXsrKHUg" name="message">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_SbB28ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI80iDEfGWK_MXsrKHUg" name="typeMessage">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_V7Lj8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI9EiDEfGWK_MXsrKHUg" name="statusMessage">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_YevF0ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiSI9UiDEfGWK_MXsrKHUg" name="CancellationImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_mdP6AELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI9kiDEfGWK_MXsrKHUg" name="idCancellation">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_fQg7oELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI90iDEfGWK_MXsrKHUg" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_ixWlIELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI-EiDEfGWK_MXsrKHUg" name="reason">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_kw1JkELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI-UiDEfGWK_MXsrKHUg" name="cancelledAt">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_nLLsIELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiSI-kiDEfGWK_MXsrKHUg" name="RatingImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_qH-fUELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI-0iDEfGWK_MXsrKHUg" name="idRating">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_sQO6YELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI_EiDEfGWK_MXsrKHUg" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_3rgD0ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI_UiDEfGWK_MXsrKHUg" name="score">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_6qGi8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_SiSI_kiDEfGWK_MXsrKHUg" name="ResourceImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_dMTywELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSI_0iDEfGWK_MXsrKHUg" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_qxKe4ELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSJAEiDEfGWK_MXsrKHUg" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_wqGoMELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSJAUiDEfGWK_MXsrKHUg" name="typeResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_0GBVcELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_SiSJAkiDEfGWK_MXsrKHUg" name="location">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_4iHtUELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>
