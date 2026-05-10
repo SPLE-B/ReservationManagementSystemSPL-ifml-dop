@@ -18,6 +18,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_nMwqMExwEfGmhuROO-RZsA" name="Pricing">
+      <annotations text="Pricing"/>
+      <viewElementEvents id="_sZvFYExwEfGmhuROO-RZsA" name="Pricing">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_xPodUExwEfGmhuROO-RZsA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Pricing.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_0Ofa8UdpEfGB28V2DbemaQ">
     <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook4EdpEfGB28V2DbemaQ" name="BookingTypeImpl">
