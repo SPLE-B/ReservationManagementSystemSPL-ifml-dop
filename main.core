@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="ASCII"?>
-<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_0Ofa8EdpEfGB28V2DbemaQ">
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_0Ofa8EdpEfGB28V2DbemaQ">
   <interactionFlowModel id="_3b_RsEdpEfGB28V2DbemaQ">
     <interactionFlowModelElements xsi:type="core:ViewContainer" id="_3cAf0EdpEfGB28V2DbemaQ" name="Home" isXOR="true"/>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_a23SYEh8EfGfS44y06AMZQ" name="Rating">
+      <annotations text="Review"/>
+      <viewElementEvents id="_cbtJQEh8EfGfS44y06AMZQ" name="Rating">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_eqc4wEh8EfGfS44y06AMZQ">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Rating.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_1uASoExbEfGt54WqW4PGnA" name="BookingType">
+      <annotations text="Booking"/>
+      <viewElementEvents id="_3i5-wExbEfGt54WqW4PGnA" name="BookingType">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_52PTUExbEfGt54WqW4PGnA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_0Ofa8UdpEfGB28V2DbemaQ">
     <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook4EdpEfGB28V2DbemaQ" name="BookingTypeImpl">
