@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_q8vP0ExYEfGt54WqW4PGnA">
+  <interactionFlowModel id="_tevSgExYEfGt54WqW4PGnA">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_texHsExYEfGt54WqW4PGnA" name="BookingType">
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_vWxLIExYEfGt54WqW4PGnA" name="Booking Page">
+        <annotations text="/booking"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5/@actionEvents.0/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.2/@viewElementEvents.0/@outInteractionFlows.0"/>
+        <viewElementEvents id="_GrnxsExZEfGt54WqW4PGnA" name="Create Booking">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_viuHAExZEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:List" id="_z-ZdkExYEfGt54WqW4PGnA" name="Table Booking ">
+          <viewElementEvents id="_Huj1YExZEfGt54WqW4PGnA" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_9XRcAExZEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+              <parameterBindingGroup id="_VAqvMExaEfGt54WqW4PGnA">
+                <parameterBindings id="_WyLwIExaEfGt54WqW4PGnA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_1vrN8ExYEfGt54WqW4PGnA" name="Booking List Data" uniformResourceIdentifier="call/bookingtype/list">
+            <parameters id="_2JYHYExYEfGt54WqW4PGnA" name="idBooking" direction="out"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_8M-okExYEfGt54WqW4PGnA" name="Booking Id">
+              <featureConcept href="main.core#//@domainModel/@domainElements.1"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_9EKIMExYEfGt54WqW4PGnA" name="Booking Date">
+              <featureConcept href="main.core#//@domainModel/@domainElements.2"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_-AOH0ExYEfGt54WqW4PGnA" name="Booking Status">
+              <featureConcept href="main.core#//@domainModel/@domainElements.3"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_MqF7QExZEfGt54WqW4PGnA" name="Add Booking Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="/booking/add"/>
+        <viewElements xsi:type="ext:Form" id="_SP_z0ExZEfGt54WqW4PGnA" name="Add BookingType Form">
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_wV3bMExZEfGt54WqW4PGnA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_wvKE8ExZEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_Vk56IExZEfGt54WqW4PGnA" name="Resource List Data" uniformResourceIdentifier="call/resource/list">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_bm4qsExZEfGt54WqW4PGnA" name="Resource">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_cDE3cExZEfGt54WqW4PGnA" name="idResource" direction="out"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_chZyMExZEfGt54WqW4PGnA" name="name"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_WqXtYExZEfGt54WqW4PGnA" name="Total Price">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_iAScwExZEfGt54WqW4PGnA" name="totalPrice"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_ZN3k4ExZEfGt54WqW4PGnA" name="Status Booking">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_iwvCQExZEfGt54WqW4PGnA" name="statusBooking"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="ext:SimpleField" id="_af-F8ExZEfGt54WqW4PGnA" name="Booking Date">
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_jlPBUExZEfGt54WqW4PGnA" name="bookingDate"/>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_v8w-sExZEfGt54WqW4PGnA" name="Save BookingType" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="POST"/>
+        <actionEvents id="_zRyZwExZEfGt54WqW4PGnA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_ztpPUExZEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_1lycsExZEfGt54WqW4PGnA" name="Detail Booking Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6/@actionEvents.0/@outInteractionFlows.0">
+        <annotations text="/booking/:idBooking"/>
+        <viewElementEvents id="_akC4MExaEfGt54WqW4PGnA" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_b7jdsExaEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Details" id="_4IseUExZEfGt54WqW4PGnA" name="Detail Booking">
+          <parameters id="_7gYy4ExZEfGt54WqW4PGnA" name="idBooking" direction="inout"/>
+          <viewElementEvents id="_fgrKQExaEfGt54WqW4PGnA" name="Remove">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_kF2loExaEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5">
+              <parameterBindingGroup id="_mB1KIExaEfGt54WqW4PGnA">
+                <parameterBindings id="_n1Sr0ExaEfGt54WqW4PGnA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewElementEvents id="_0rQRoExaEfGt54WqW4PGnA" name="Detail">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_2PTeUExaEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4">
+              <parameterBindingGroup id="_3BPRkExaEfGt54WqW4PGnA">
+                <parameterBindings id="_3kquwExaEfGt54WqW4PGnA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0"/>
+              </parameterBindingGroup>
+            </outInteractionFlows>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_-NRP4ExZEfGt54WqW4PGnA" name="Booking Detail Data" uniformResourceIdentifier="call/bookingtype/detail">
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_EGBzAExaEfGt54WqW4PGnA" name="Booking Id" featureConcept="//@domainModel/@domainElements.24"/>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_EzxCwExaEfGt54WqW4PGnA" name="Booking Status">
+              <featureConcept href="main.core#//@domainModel/@domainElements.3"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_FBANgExaEfGt54WqW4PGnA" name="Booking Date">
+              <featureConcept href="main.core#//@domainModel/@domainElements.2"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_GSo0gExaEfGt54WqW4PGnA" name="Total Price">
+              <annotations text="isCurrency"/>
+              <featureConcept href="main.core#//@domainModel/@domainElements.4"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_G8pa0ExaEfGt54WqW4PGnA" name="Created At">
+              <featureConcept href="main.core#//@domainModel/@domainElements.5"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:ViewContainer" id="_dNgNwExaEfGt54WqW4PGnA" name="Update Booking Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.1/@outInteractionFlows.0">
+        <annotations text="/booking/update"/>
+        <viewElementEvents id="_6gSLUExaEfGt54WqW4PGnA" name="Kembali">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_7XHFoExaEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+            <parameterBindingGroup id="_7vZp0ExaEfGt54WqW4PGnA">
+              <parameterBindings id="_8LhlIExaEfGt54WqW4PGnA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+        <viewElements xsi:type="ext:Form" id="_t01zcExaEfGt54WqW4PGnA" name="Update BookingType Form">
+          <parameters id="_yaFgQExaEfGt54WqW4PGnA" name="idBooking" direction="inout"/>
+          <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_HbCKgExbEfGt54WqW4PGnA" name="Save">
+            <outInteractionFlows xsi:type="core:NavigationFlow" id="_ba_R0ExbEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.6"/>
+          </viewElementEvents>
+          <viewComponentParts xsi:type="core:DataBinding" id="_-adh4ExaEfGt54WqW4PGnA" name="Booking Detail Data" uniformResourceIdentifier="call/bookingtype/detail">
+            <subViewComponentParts xsi:type="core:DataBinding" id="_Bl1RsExbEfGt54WqW4PGnA" name="Resource List Data" uniformResourceIdentifier="call/resource/list">
+              <subViewComponentParts xsi:type="ext:SelectionField" id="_FZwPQExbEfGt54WqW4PGnA" name="Resource">
+                <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Ke6yQExbEfGt54WqW4PGnA" name="idBooking" direction="out"/>
+                <subViewComponentParts xsi:type="ext:IFMLSlot" id="_K45YgExbEfGt54WqW4PGnA" name="name"/>
+              </subViewComponentParts>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_PC1CUExbEfGt54WqW4PGnA" name="Total Price">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_RIa10ExbEfGt54WqW4PGnA" name="totalPrice"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_Pk7p0ExbEfGt54WqW4PGnA" name="Booking Status">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_RV0YoExbEfGt54WqW4PGnA" name="statusBooking"/>
+            </subViewComponentParts>
+            <subViewComponentParts xsi:type="ext:SimpleField" id="_QzIiUExbEfGt54WqW4PGnA" name="Booking Date">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Rie7oExbEfGt54WqW4PGnA" name="bookingDate"/>
+            </subViewComponentParts>
+          </viewComponentParts>
+        </viewElements>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_hGaZAExaEfGt54WqW4PGnA" name="Delete BookingType" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="DELETE"/>
+        <parameters id="_lApZ8ExaEfGt54WqW4PGnA" name="idBooking"/>
+        <actionEvents id="_hyjGQExaEfGt54WqW4PGnA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_khD68ExaEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
+      </interactionFlowModelElement>
+      <interactionFlowModelElement xsi:type="core:IFMLAction" id="_a0aaAExbEfGt54WqW4PGnA" name="Update BookingType" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+        <annotations text="PUT"/>
+        <parameters id="_gX6e0ExbEfGt54WqW4PGnA" name="idBooking"/>
+        <actionEvents id="_cALCgExbEfGt54WqW4PGnA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_ciSREExbEfGt54WqW4PGnA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
+            <parameterBindingGroup id="_h7ntQExbEfGt54WqW4PGnA">
+              <parameterBindings id="_i4BEEExbEfGt54WqW4PGnA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </actionEvents>
+      </interactionFlowModelElement>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_q8vP0UxYEfGt54WqW4PGnA">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819gExYEfGt54WqW4PGnA" name="BookingTypeImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_doq7cELFEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819gUxYEfGt54WqW4PGnA" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_KzSe8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819gkxYEfGt54WqW4PGnA" name="bookingDate">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_LQyTQELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819g0xYEfGt54WqW4PGnA" name="statusBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_MTKWQELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819hExYEfGt54WqW4PGnA" name="totalPrice">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_Mk5mgELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819hUxYEfGt54WqW4PGnA" name="createdAt">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_MpGxEELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819hkxYEfGt54WqW4PGnA" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_k18doELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819h0xYEfGt54WqW4PGnA" name="PricingImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_wd8_YELFEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819iExYEfGt54WqW4PGnA" name="idPricing">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_qZ5gUELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819iUxYEfGt54WqW4PGnA" name="basePrice">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_tlEb0ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819ikxYEfGt54WqW4PGnA" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#__eOj0ELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819i0xYEfGt54WqW4PGnA" name="PaymentImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_TRaXQELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819jExYEfGt54WqW4PGnA" name="idPayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_0Ozv8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819jUxYEfGt54WqW4PGnA" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_39N7YELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819jkxYEfGt54WqW4PGnA" name="amount">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_-HSQ8ELHEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819j0xYEfGt54WqW4PGnA" name="statusPayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_BVbn8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819kExYEfGt54WqW4PGnA" name="metodePayment">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_Fmf0gELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819kUxYEfGt54WqW4PGnA" name="NotificationImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_XJbxsELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819kkxYEfGt54WqW4PGnA" name="idNotification">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_PFW7oELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819k0xYEfGt54WqW4PGnA" name="message">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_SbB28ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819lExYEfGt54WqW4PGnA" name="typeMessage">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_V7Lj8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819lUxYEfGt54WqW4PGnA" name="statusMessage">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_YevF0ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819lkxYEfGt54WqW4PGnA" name="CancellationImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_mdP6AELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819l0xYEfGt54WqW4PGnA" name="idCancellation">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_fQg7oELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819mExYEfGt54WqW4PGnA" name="idBooking">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_ixWlIELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819mUxYEfGt54WqW4PGnA" name="reason">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_kw1JkELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819mkxYEfGt54WqW4PGnA" name="cancelledAt">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_nLLsIELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819m0xYEfGt54WqW4PGnA" name="RatingImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_qH-fUELGEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819nExYEfGt54WqW4PGnA" name="idRating">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_sQO6YELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819nUxYEfGt54WqW4PGnA" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_3rgD0ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819nkxYEfGt54WqW4PGnA" name="score">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_6qGi8ELIEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLDomainConcept" id="_q819n0xYEfGt54WqW4PGnA" name="ResourceImpl">
+      <classifier xsi:type="uml:Class" href="../reservation-uml/reservation-uml.uml#_dMTywELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819oExYEfGt54WqW4PGnA" name="idResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_qxKe4ELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819oUxYEfGt54WqW4PGnA" name="name">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_wqGoMELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819okxYEfGt54WqW4PGnA" name="typeResource">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_0GBVcELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_q819o0xYEfGt54WqW4PGnA" name="location">
+      <structuralFeature xsi:type="uml:Property" href="../reservation-uml/reservation-uml.uml#_4iHtUELJEfGL-aoP5-C5zA"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>

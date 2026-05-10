@@ -10,6 +10,14 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_1uASoExbEfGt54WqW4PGnA" name="BookingType">
+      <annotations text="Booking"/>
+      <viewElementEvents id="_3i5-wExbEfGt54WqW4PGnA" name="BookingType">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_52PTUExbEfGt54WqW4PGnA">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="BookingType.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_0Ofa8UdpEfGB28V2DbemaQ">
     <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook4EdpEfGB28V2DbemaQ" name="BookingTypeImpl">
