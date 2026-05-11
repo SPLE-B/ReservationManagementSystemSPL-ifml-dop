@@ -29,7 +29,7 @@
             </outInteractionFlows>
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_doFIsEhvEfGfS44y06AMZQ" name="Rating List Data" uniformResourceIdentifier="call/rating/list">
-            <parameters id="_g8VuwEhvEfGfS44y06AMZQ" name="idRating list" direction="out"/>
+            <parameters id="_g8VuwEhvEfGfS44y06AMZQ" name="idRating" direction="out"/>
             <subViewComponentParts xsi:type="core:VisualizationAttribute" id="_jKj50EhvEfGfS44y06AMZQ" name="Id Resource">
               <featureConcept href="main.core#//@domainModel/@domainElements.6"/>
             </subViewComponentParts>
@@ -78,7 +78,7 @@
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_SEnZoEh8EfGfS44y06AMZQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:Form" id="_IahvYEh7EfGfS44y06AMZQ" name="Update Rating Form">
-          <parameters id="_Kzys0Eh7EfGfS44y06AMZQ" name="idRating updae" direction="inout"/>
+          <parameters id="_Kzys0Eh7EfGfS44y06AMZQ" name="idRating" direction="inout"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_ClCtQEh8EfGfS44y06AMZQ" name="Save">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_FM3EEEh8EfGfS44y06AMZQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.5"/>
           </viewElementEvents>

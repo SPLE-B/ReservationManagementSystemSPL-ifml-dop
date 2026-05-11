@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_ZZXh4ExnEfGmhuROO-RZsA">
   <interactionFlowModel id="_hX6FwExnEfGmhuROO-RZsA">
-    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_hX9JEExnEfGmhuROO-RZsA" name="idPricing">
+    <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_hX9JEExnEfGmhuROO-RZsA" name="Pricing">
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_kwWoQExnEfGmhuROO-RZsA" name="Table Pricing Page">
         <annotations text="/pricing"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@outInteractionFlows.0"/>
