@@ -26,6 +26,30 @@
         </outInteractionFlows>
       </viewElementEvents>
     </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_c-K7YEzVEfGZ4ZceE57zww" name="Payment">
+      <annotations text="Payment"/>
+      <viewElementEvents id="_f_TxIEzVEfGZ4ZceE57zww" name="Payment">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_ojbuUEzVEfGZ4ZceE57zww">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Payment.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_NJkS0EzYEfGZ4ZceE57zww" name="Notification">
+      <annotations text="Notification"/>
+      <viewElementEvents id="_QHjG4EzYEfGZ4ZceE57zww" name="Notification">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_QmfssEzYEfGZ4ZceE57zww">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Notification.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_bei-4EzZEfGZ4ZceE57zww" name="Cancellation">
+      <annotations text="Cancellation"/>
+      <viewElementEvents id="_dd0H8EzZEfGZ4ZceE57zww" name="Cancellation">
+        <outInteractionFlows xsi:type="core:NavigationFlow" id="_d2KWgEzZEfGZ4ZceE57zww">
+          <targetInteractionFlowElement xsi:type="core:ViewContainer" href="Cancellation.core#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </outInteractionFlows>
+      </viewElementEvents>
+    </interactionFlowModelElements>
   </interactionFlowModel>
   <domainModel id="_0Ofa8UdpEfGB28V2DbemaQ">
     <domainElements xsi:type="core:UMLDomainConcept" id="_0Ook4EdpEfGB28V2DbemaQ" name="BookingTypeImpl">
