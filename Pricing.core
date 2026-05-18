@@ -39,19 +39,18 @@
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_QXLdwExpEfGmhuROO-RZsA" name="Tambah">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_eF8T0ExpEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="ext:SimpleField" id="_fc_bwExoEfGmhuROO-RZsA" name="Id Resource">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_m0-V8ExoEfGmhuROO-RZsA" name="Id Resource">
-              <annotations text="Required"/>
-              <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-            </subViewComponentParts>
-            <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-          </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_yA6p8ExoEfGmhuROO-RZsA" name="Base Price">
             <subViewComponentParts xsi:type="ext:IFMLSlot" id="_3DZFUExoEfGmhuROO-RZsA" name="Base Price">
               <annotations text="Required"/>
               <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             </subViewComponentParts>
             <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </viewComponentParts>
+          <viewComponentParts xsi:type="core:DataBinding" id="_f1_WoFJzEfGcuuk7uMyqXg" name="Resource List Data" uniformResourceIdentifier="call/resource/list">
+            <subViewComponentParts xsi:type="ext:SelectionField" id="_rkQ7oFJzEfGcuuk7uMyqXg" name="Resource">
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_-cBr0FJzEfGcuuk7uMyqXg" name="idResource" direction="out"/>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_FDiLUFJ0EfGcuuk7uMyqXg" name="name"/>
+            </subViewComponentParts>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>
@@ -73,9 +72,7 @@
           </viewElementEvents>
           <viewComponentParts xsi:type="core:DataBinding" id="_3mN20ExuEfGmhuROO-RZsA" name="Pricing Data" uniformResourceIdentifier="call/pricing/detail">
             <subViewComponentParts xsi:type="ext:SimpleField" id="_HPTEgExvEfGmhuROO-RZsA" name="Id Resource">
-              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_PremoExvEfGmhuROO-RZsA" name="Id Resource">
-                <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-              </subViewComponentParts>
+              <subViewComponentParts xsi:type="ext:IFMLSlot" id="_n0g28FJ0EfGcuuk7uMyqXg" name="Id Resource"/>
               <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
             </subViewComponentParts>
             <subViewComponentParts xsi:type="ext:SimpleField" id="_UIZd4ExvEfGmhuROO-RZsA" name="Base Price">
