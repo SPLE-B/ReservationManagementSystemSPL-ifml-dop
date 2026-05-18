@@ -34,13 +34,13 @@
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_JOZdwEzYEfGZ4ZceE57zww" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2"/>
           </viewElementEvents>
           <viewComponentParts xsi:type="ext:SimpleField" id="_8JNJIEzXEfGZ4ZceE57zww" name="Status Message">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_A81QMEzYEfGZ4ZceE57zww" name="Slot"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_A81QMEzYEfGZ4ZceE57zww" name="Status Message"/>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_81Rk8EzXEfGZ4ZceE57zww" name="Type Message">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Bg94AEzYEfGZ4ZceE57zww" name="Slot"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_Bg94AEzYEfGZ4ZceE57zww" name="Type Message"/>
           </viewComponentParts>
           <viewComponentParts xsi:type="ext:SimpleField" id="_9jDQ8EzXEfGZ4ZceE57zww" name="Message">
-            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_B1yRcEzYEfGZ4ZceE57zww" name="Slot"/>
+            <subViewComponentParts xsi:type="ext:IFMLSlot" id="_B1yRcEzYEfGZ4ZceE57zww" name="Message"/>
           </viewComponentParts>
         </viewElements>
       </interactionFlowModelElement>

@@ -4,9 +4,9 @@
     <interactionFlowModelElements xsi:type="core:ModuleDefinition" id="_hX9JEExnEfGmhuROO-RZsA" name="Pricing">
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_kwWoQExnEfGmhuROO-RZsA" name="Table Pricing Page">
         <annotations text="/pricing"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.2/@actionEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElementEvents.0/@outInteractionFlows.0"/>
-        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@outInteractionFlows.0"/>
+        <inInteractionFlows xsi:type="core:NavigationFlow" href="#//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4/@actionEvents.0/@outInteractionFlows.0"/>
         <inInteractionFlows xsi:type="core:NavigationFlow" href="main.core#//@interactionFlowModel/@interactionFlowModelElements.3/@viewElementEvents.0/@outInteractionFlows.0"/>
         <viewElementEvents id="_I4GdEExpEfGmhuROO-RZsA" name="Tambah Pricing">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_N-4wsExpEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1"/>
@@ -15,7 +15,7 @@
           <viewElementEvents id="_FRmeMExuEfGmhuROO-RZsA" name="Update Pricing">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_Lw8gMExuEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3">
               <parameterBindingGroup id="_SfNvAExuEfGmhuROO-RZsA">
-                <parameterBindings id="_spDlsExuEfGmhuROO-RZsA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
+                <parameterBindings id="_spDlsExuEfGmhuROO-RZsA" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewComponentParts.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@parameters.0"/>
               </parameterBindingGroup>
             </outInteractionFlows>
           </viewElementEvents>
@@ -57,19 +57,21 @@
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:IFMLAction" id="_Xj3t8ExpEfGmhuROO-RZsA" name="Save Pricing" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.1/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="POST"/>
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_fLuQIExpEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        <actionEvents id="_8nt3UE4aEfGfQ-O4LGdsAA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_fLuQIExpEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:ViewContainer" id="_sNuG0ExpEfGmhuROO-RZsA" name="Update Pricing Page" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
-        <annotations text="/pricing/update/:id_pricing"/>
+        <annotations text="/pricing/update/:idPricing"/>
         <viewElementEvents id="_MxWNQExuEfGmhuROO-RZsA" name="Kembali">
           <outInteractionFlows xsi:type="core:NavigationFlow" id="_QIJxAExuEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
         </viewElementEvents>
         <viewElements xsi:type="ext:Form" id="_LbBI8ExtEfGmhuROO-RZsA" name="Update Pricing Form">
-          <parameters id="_qy6Y4ExtEfGmhuROO-RZsA" name="idPricing"/>
+          <parameters id="_qy6Y4ExtEfGmhuROO-RZsA" name="idPricing" direction="inout"/>
           <viewElementEvents xsi:type="ext:OnSubmitEvent" id="_MD-fAExwEfGmhuROO-RZsA" name="Update">
             <outInteractionFlows xsi:type="core:NavigationFlow" id="_P5L2AExwEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.4"/>
           </viewElementEvents>
-          <viewComponentParts xsi:type="core:DataBinding" id="_3mN20ExuEfGmhuROO-RZsA" name="Pricing Data" uniformResourceIdentifier="call/pricing/update">
+          <viewComponentParts xsi:type="core:DataBinding" id="_3mN20ExuEfGmhuROO-RZsA" name="Pricing Data" uniformResourceIdentifier="call/pricing/detail">
             <subViewComponentParts xsi:type="ext:SimpleField" id="_HPTEgExvEfGmhuROO-RZsA" name="Id Resource">
               <subViewComponentParts xsi:type="ext:IFMLSlot" id="_PremoExvEfGmhuROO-RZsA" name="Id Resource">
                 <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
@@ -87,7 +89,9 @@
       </interactionFlowModelElement>
       <interactionFlowModelElement xsi:type="core:IFMLAction" id="__ZkB4ExvEfGmhuROO-RZsA" name="Update Pricing" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.3/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
         <annotations text="PUT"/>
-        <outInteractionFlows xsi:type="core:NavigationFlow" id="_Qga1IExwEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        <actionEvents id="_-Z60wE4aEfGfQ-O4LGdsAA">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Qga1IExwEfGmhuROO-RZsA" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0/@interactionFlowModelElement.0"/>
+        </actionEvents>
       </interactionFlowModelElement>
     </interactionFlowModelElements>
   </interactionFlowModel>
